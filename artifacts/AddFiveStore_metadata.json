@@ -1,0 +1,154 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint128",
+						"name": "_favoriteNumber",
+						"type": "uint128"
+					},
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					}
+				],
+				"name": "addpeople",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "favoriteNum",
+				"outputs": [
+					{
+						"internalType": "uint128",
+						"name": "",
+						"type": "uint128"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "listofpeople",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "favoriteNumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "nameToFavoriteNumber",
+				"outputs": [
+					{
+						"internalType": "uint128",
+						"name": "",
+						"type": "uint128"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "reteieve",
+				"outputs": [
+					{
+						"internalType": "uint128",
+						"name": "",
+						"type": "uint128"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint128",
+						"name": "_NewNumber",
+						"type": "uint128"
+					}
+				],
+				"name": "store",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Contracts/AddFiveStorage.sol": "AddFiveStore"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Contracts/AddFiveStorage.sol": {
+			"keccak256": "0x3e3d91b6379dd3e06f27fe6e1781bbd0d73c4ea55b6a15d5212ae2b957c23311",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f5faae5a849e200cbe311f8916f78f1513bc9b0025c222347060c0cdb21763cd",
+				"dweb:/ipfs/QmViqGAuLxSCAsFwcqNibj8uybAoVhbAc3WbB3iQrSTWxn"
+			]
+		},
+		"Contracts/SimpleStorage.sol": {
+			"keccak256": "0x07da0795a3703340e5d3bb2dc7b8449163eb8ee529f9f92870e4c29017b4ae82",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://bc18b58afdf3f7b71d846660aad0ec7b9e981bbab6b0b248768f9bddebf78f8b",
+				"dweb:/ipfs/QmTHQB4am8bLH7Rk3jEy6rifyjNpdd47DDWWeQ5ZeyLHpe"
+			]
+		}
+	},
+	"version": 1
+}

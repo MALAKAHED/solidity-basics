@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Contracts/AddFiveStorage.sol": "AddFive"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Contracts/AddFiveStorage.sol": {
+			"keccak256": "0x202a675f481ef8f07624b7e75d0bda5e73bd6d1e7179216d77c7e113465c20f2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3c34435d8f179eb91968743d36f7764941c6b0945be4510ac3d5b802b9f7bf03",
+				"dweb:/ipfs/QmZsvaB3jtjHPGGvyHp419fMz1eXh89ZCRn5Mpn39NRCTt"
+			]
+		}
+	},
+	"version": 1
+}
