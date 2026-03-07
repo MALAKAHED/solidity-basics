@@ -1,0 +1,109 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_readerName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_readerFavBook",
+						"type": "string"
+					}
+				],
+				"name": "AddNewReader",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					}
+				],
+				"name": "addFavoriteBook",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "favoriteBook",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					}
+				],
+				"name": "nameFavBook",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "_readerFavBook",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Tasks/Task1.sol": "FavoriteBookStorage"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Tasks/Task1.sol": {
+			"keccak256": "0x98ce97e24b0aa5dd837b5566a296007d3606a4930cf286d8ea479822b922d1a7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5e0d504d84878e6f74e3a98b5b5680aeafcb8888b4cea3c87d02072a3bbd3d86",
+				"dweb:/ipfs/QmWeBrT18K5miDot3MLkAYzTicwsSD5DbwG6YdTTEq2Gnh"
+			]
+		}
+	},
+	"version": 1
+}
