@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "sound",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Tasks/Task3/ParentContract.sol": "Animal"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Tasks/Task3/ParentContract.sol": {
+			"keccak256": "0x1c21b83cd11b10bda607c5b5e5c7eabe37dc013ae8045a557371bea05c7d6939",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://af49ffdc3b8b898ad125bc03653f32fef667e454c039ec64db76f653d119b878",
+				"dweb:/ipfs/QmVGwN2khGh4nYB9nNr8b6xicwKLpgGx9Luaj1E84GRZY7"
+			]
+		}
+	},
+	"version": 1
+}

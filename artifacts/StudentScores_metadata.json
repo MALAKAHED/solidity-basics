@@ -9,41 +9,35 @@
 				"inputs": [
 					{
 						"internalType": "string",
-						"name": "_book",
+						"name": "_name",
 						"type": "string"
 					}
 				],
-				"name": "addFavoriteBook",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"name": "GetStudentScore",
+				"outputs": [
+					{
+						"internalType": "uint128",
+						"name": "",
+						"type": "uint128"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
 				"inputs": [
 					{
 						"internalType": "string",
-						"name": "_readerName",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "_readerFavBook",
+						"name": "",
 						"type": "string"
 					}
 				],
-				"name": "addNewReader",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "favoriteBook",
+				"name": "getScore",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "uint128",
 						"name": "",
-						"type": "string"
+						"type": "uint128"
 					}
 				],
 				"stateMutability": "view",
@@ -57,7 +51,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "listOfReaders",
+				"name": "listOfStudents",
 				"outputs": [
 					{
 						"internalType": "string",
@@ -65,9 +59,9 @@
 						"type": "string"
 					},
 					{
-						"internalType": "string",
-						"name": "readerFavBook",
-						"type": "string"
+						"internalType": "uint128",
+						"name": "score",
+						"type": "uint128"
 					}
 				],
 				"stateMutability": "view",
@@ -77,32 +71,18 @@
 				"inputs": [
 					{
 						"internalType": "string",
-						"name": "",
+						"name": "_name",
 						"type": "string"
-					}
-				],
-				"name": "nameFavBook",
-				"outputs": [
+					},
 					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
+						"internalType": "uint128",
+						"name": "_score",
+						"type": "uint128"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "reteieve",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
+				"name": "newStudent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -119,7 +99,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Tasks/Task1.sol": "FavoriteBookStorage"
+			"Tasks/Task2.sol": "StudentScores"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -133,12 +113,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Tasks/Task1.sol": {
-			"keccak256": "0x5b5108b112f26a994e15b717923a6b30453005db2536580190acc20d063fbace",
+		"Tasks/Task2.sol": {
+			"keccak256": "0x159cd5610486fa0470020563e6809d33e77b005ae3e3f13128fb82263932936f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://373b1b17773e770b37e6f5de7b64bb4482a48996d955f5598cd09cd933a3794a",
-				"dweb:/ipfs/QmPPUeUNaWTMP2wAotr1a7gR8uMgyVCo2HbTLsSsu8tYZ8"
+				"bzz-raw://9056f0bd4e149e1c014dffe93215197ecd2ed12f1d3faf5549809cfc3f59ca13",
+				"dweb:/ipfs/QmQwBVCNvdQVtTF5zY4Tyb46cpe6nmVpfuaVTBekun8vqZ"
 			]
 		}
 	},
