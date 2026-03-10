@@ -2,16 +2,40 @@
 
 pragma solidity ^0.8.18;
 
+// solhint-disable-next-line interface-starts-with-i
+interface AggregatorV3Interface {
+  function decimals() external view returns (uint8);
+
+  function description() external view returns (string memory);
+
+  function version() external view returns (uint256);
+
+  function getRoundData(
+    uint80 _roundId
+  ) external view returns (uint80 roundId, int256 answer, uint256 startedAt, uint256 updatedAt, uint80 answeredInRound);
+
+  function latestRoundData()
+    external
+    view
+    returns (uint80 roundId, int256 answer, uint256 startedAt, uint256 updatedAt, uint80 answeredInRound);
+}
+
 contract fundMe {
 
 // function fund allow paople to send mony 
 // minimum value to send
+    uint public minimumUsd = 5;
 
     function fund() public payable {
 
-        require(msg.value > 1e18, "didn't send enough mony!");
+        
+        require(msg.value > minimumUsd, "didn't send enough mony!");
         
     }
 
     // function withDraw() public {}
+
+    function getPrise() public {}
+    function getConversionRate() public {}
+
 }
