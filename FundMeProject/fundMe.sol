@@ -2,40 +2,40 @@
 
 pragma solidity ^0.8.18;
 
-// solhint-disable-next-line interface-starts-with-i
-interface AggregatorV3Interface {
-  function decimals() external view returns (uint8);
-
-  function description() external view returns (string memory);
-
-  function version() external view returns (uint256);
-
-  function getRoundData(
-    uint80 _roundId
-  ) external view returns (uint80 roundId, int256 answer, uint256 startedAt, uint256 updatedAt, uint80 answeredInRound);
-
-  function latestRoundData()
-    external
-    view
-    returns (uint80 roundId, int256 answer, uint256 startedAt, uint256 updatedAt, uint80 answeredInRound);
-}
+import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
 
 contract fundMe {
 
 // function fund allow paople to send mony 
 // minimum value to send
-    uint public minimumUsd = 5;
+    uint public minimumUsd = 5e18;
+
+    address[] public funders;
+    mapping(address funder => uint256 ammountFunded) public adressToAmountFunded;
+
 
     function fund() public payable {
 
-        
-        require(msg.value > minimumUsd, "didn't send enough mony!");
-        
+        require(getConversionRate(msg.value) >= minimumUsd, "didn't send enough ETH!");
+        funders.push(msg.sender);
+        adressToAmountFunded[msg.sender] = adressToAmountFunded[msg.sender] + msg.value;
     }
 
-    // function withDraw() public {}
+ 
+    function getPrice() public view returns(uint256){
+        AggregatorV3Interface pricefeed = AggregatorV3Interface(0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419);
+        (,int256 price,,,) = pricefeed.latestRoundData();
+        return uint256(price * 1e10);
+    }
 
-    function getPrise() public {}
-    function getConversionRate() public {}
+    function getConversionRate(uint256 ethAmount) public view returns(uint256) {
+        uint256 ethPrice = getPrice();
+        uint256 ethAmountInUSD = (ethPrice * ethAmount) / 1e18;
+        return ethAmountInUSD;
+    }
 
-}
+    function getVersion() public view returns(uint256) {
+        return AggregatorV3Interface(0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419).version();
+    }
+        // function withDraw() public {}
+} 
