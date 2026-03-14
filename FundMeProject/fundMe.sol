@@ -23,6 +23,7 @@ contract fundMe {
       //for(starting index ,       ended index,                   step amount) {}
         for(uint256 funderIndex = 0; funderIndex = funders.length; funderIndex++){
             address funder = funders[funderIndex];
+            
             adressToAmountFunded[funder] = 0;
         }
     }
