@@ -11,5 +11,4 @@ contract AddFiveStore is SimpleStorage {
         favoriteNum = _NewNumber +5;
     }
 
-
 }
